@@ -21,9 +21,22 @@ $.each(competence, function(index,elt){
 //barre de recherche sur la première colonne
 $("#myInput").on("keyup", function() {
     var value = $(this).val().toLowerCase();
+    var nbValue = 0;
     $("#myTable tr").filter(function() {
-      $(this).toggle($(this).children(':eq(0)').text().toLowerCase().indexOf(value) > -1)
+      var isMatch = $(this).children(':eq(0)').text().toLowerCase().indexOf(value) > -1;
+      $(this).toggle(isMatch)
+      
+      if (isMatch) {
+        nbValue ++
+      }
     });
+      //Si pas de résultat on affiche le texte
+      if(nbValue == 0){
+        $("#zeroCompetence").show();
+      }else{
+        console.log("ok");
+        $("#zeroCompetence").hide();
+      }
   });
 
 });
