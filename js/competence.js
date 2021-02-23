@@ -27,3 +27,21 @@ $("#myInput").on("keyup", function() {
   });
 
 });
+
+//Filtre sur le type avec radio button
+$(":radio").change(function() {
+  if(this.checked) {
+      //console.log(this.value.toLowerCase())
+      var value = this.value.toLowerCase();
+      if(value == "tout"){
+        $("#myTable tr").show()
+      }
+      else{
+        //filtre sur la 2eme colonne
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).children(':eq(1)').text().toLowerCase().indexOf(value) > -1)
+        });
+      }
+
+  }
+});
