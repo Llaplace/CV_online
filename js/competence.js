@@ -2,19 +2,51 @@ $(document).ready(function () {
   //    console.log("ready !"); 
 
   var competence = [
-    ["informatique", "SQL", "2 ans"],
-    ["informatique", "C", "2 ans"],
-    ["informatique", "Perl", "2 ans"],
-    ["langue", "anglais", "2 ans"],
-    ["langue", "français", "2 ans"],
-    ["biologie", "NCBI", "2 ans"],
-    ["biologie", "génomique", "2 ans"],
+    ["informatique", "SQL", "4"],
+    ["informatique", "C", "1"],
+    ["informatique", "Perl", "2"],
+    ["langue", "anglais", "B1"],
+    ["langue", "français", "B1"],
+    ["biologie", "NCBI", "2"],
+    ["biologie", "génomique", "3"],
   ]
+
+  function niveau(nb) {
+    var star = "";
+    switch (nb) {
+      case "1":
+        star = '<i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>'
+        break;
+      case "2":
+        star = '<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>'
+        break;
+      case "3":
+        star = '<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>'
+        break;
+      case "4":
+        star = '<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>'
+        break;
+      case "5":
+        star = '<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>'
+        break;
+
+      default:
+        star = '<i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>'
+        break;
+    }
+    return star
+  }
 
   // remplissage tableau
   $.each(competence, function (index, elt) {
     // console.log(elt);
-    var ligne = "<tr><td>" + elt[1] + "</td><td>" + elt[0] + "</td><td>" + elt[2] + "</td></tr>"
+    if (elt[0] == "langue") {
+      var ligne = "<tr><td>" + elt[1] + "</td><td>" + elt[0] + "</td><td>" + elt[2] + "</td></tr>"
+      
+    } else {
+       ligne = "<tr><td>" + elt[1] + "</td><td>" + elt[0] + "</td><td>" + niveau(elt[2]) + "</td></tr>"
+      
+    }
     $("tbody").append(ligne);
   })
 

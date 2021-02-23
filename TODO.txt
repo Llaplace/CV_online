@@ -1,0 +1,3 @@
+NavBar : mettre Lisa Laplace
+Compétences.html : bouton retour 
+		 + remplacer le temps par le niveau et explication au niveau th
