@@ -1,7 +1,7 @@
 $(document).ready(function () {
     //    console.log("ready !"); 
   
-    var experience = 
+    var centre_I = 
      {
          "1": {
             "nom": "Lecture",
@@ -21,7 +21,7 @@ $(document).ready(function () {
 
 
 
-    $.each(experience, function (indexInArray, elt) { 
+    $.each(centre_I, function (indexInArray, elt) { 
         //console.log(indexInArray);
 
         var textM = "<p>"+elt.texte+"</p>"
