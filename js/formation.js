@@ -29,10 +29,10 @@ $(document).ready(function () {
   
 
 
-
+     //Ajout des informations
     $.each(formation, function (indexInArray, elt) { 
-        console.log(indexInArray);
-         console.log(elt.nom)
+        //console.log(indexInArray);
+        //console.log(elt.nom)
 
         var textC = 
         '<\p><p class="fw-bold">Lieu : </p><p>' + elt.lieu 
