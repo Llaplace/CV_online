@@ -1,12 +1,8 @@
-NavBar : mettre Lisa Laplace et enlever savoir +
 Compétences.html : 
 		 + remplacer le temps par le niveau et explication au niveau th
-Compétences.js : refaire fonction niveau
+Compétences.js : refaire fonction niveau ou mettre maîtrise experte, amateur
 Formation.js : mettre le nom des établissement
-information_personnelles : ajouter nationnalité
-lien : soucis lien ne marche pas
+lien : lien soit mettre dans info perso ou renonner les liens
 linkedin : mettre a jour permis
-formation : enlever avis
-centre interet : manque titre modal art | erreur icone
-
+Traduction
 Mettre navBar sur tout les fichiers

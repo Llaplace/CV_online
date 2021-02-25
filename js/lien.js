@@ -10,7 +10,7 @@ $(document).ready(function () {
             },
             "2": {
                 "nom": " Github",
-                "lien": "github.com/Llaplace/",
+                "lien": "https://github.com/Llaplace/",
             }
         }
        

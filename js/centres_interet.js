@@ -8,12 +8,12 @@ $(document).ready(function () {
              "texte": "1000 livres en 2",
          },
          "2": {
-            "nom": "Sport",
-            "texte": "step, bachata, danse",
+            "nom": "Arts",
+            "texte": 'peinture, diy',
         },
         "3": {
-            "Arts": "Lecture",
-            "texte": 'peinture, diy',
+            "nom": "Sport",
+            "texte": "step, bachata, danse",
         }
      }
     
