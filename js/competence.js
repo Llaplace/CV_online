@@ -15,6 +15,7 @@ $(document).ready(function () {
     ["informatique", "Java", "3"],
     ["informatique", "Javascript", "4"],
     ["informatique", "Node js", "3"],
+    ["informatique", "Perl", "2"],
     ["informatique", "PHP", "2"],
     ["informatique", "Postgres", "3"],
     ["informatique", "Python", "3"],

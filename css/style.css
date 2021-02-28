@@ -63,3 +63,10 @@ a:link, a:visited {
     opacity: 0.8;
     color: black;
 }
+
+/* formations.html */
+.accordion-body{
+    background-color: white ;
+    opacity: 0.8;
+
+}
