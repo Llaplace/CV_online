@@ -1,7 +1,15 @@
+/* Toutes les pages */
+
 body {
     padding-top: 65px;
     background-image: url("../data/images/watercolor-5062356_1920.jpg");
 }
+
+a:link, a:visited {
+    color: black;
+    text-decoration: none;
+  }
+
 
 /* index.html */
 .col_index{
@@ -44,9 +52,14 @@ body {
 
 }
 
-a:link, a:visited {
+/* competences.html */
+#dropdownMenuLink, #dropdownMenuLink:active,#dropdownMenuLink:link,#dropdownMenuLink:visited{
+    background:none ;
+    border:none;
+}
+
+#dropdownMenuLink:hover{
+    background-color: white ;
+    opacity: 0.8;
     color: black;
-    text-decoration: none;
-  }
-
-
+}

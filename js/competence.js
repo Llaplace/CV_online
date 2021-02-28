@@ -2,15 +2,26 @@ $(document).ready(function () {
   //    console.log("ready !"); 
 
   var competence = [
-    ["informatique", "SQL", "4"],
-    ["informatique", "C", "1"],
-    ["informatique", "Perl", "2"],
     ["langue", "anglais", "B1"],
     ["langue", "français", "B1"],
-    ["biologie", "NCBI", "2"],
-    ["biologie", "génomique", "3"],
+    ["informatique", "Angular", "2"],
+    ["informatique", "Bio Perl", "1"],
+    ["informatique", "Bootstrap", "4"],
+    ["informatique", "C", "1"],
+    ["informatique", "Caml", "3"],
+    ["informatique", "CSS", "5"],
+    ["informatique", "Django", "3"],
+    ["informatique", "HTML", "5"],
+    ["informatique", "Java", "3"],
+    ["informatique", "Javascript", "4"],
+    ["informatique", "Node js", "3"],
+    ["informatique", "PHP", "2"],
+    ["informatique", "Postgres", "3"],
+    ["informatique", "Python", "3"],
+    ["informatique", "SQL", "4"],
+    ["informatique", "Unix shell", "3"]
   ]
-
+ 
   function niveau(nb) {
     var star = "";
     switch (nb) {
@@ -39,7 +50,7 @@ $(document).ready(function () {
 
   // remplissage tableau
   $.each(competence, function (index, elt) {
-    // console.log(elt);
+    //  console.log(elt);
     if (elt[0] == "langue") {
       var ligne = "<tr><td>" + elt[1] + "</td><td>" + elt[0] + "</td><td>" + elt[2] + "</td></tr>"
       
@@ -50,6 +61,7 @@ $(document).ready(function () {
     $("tbody").append(ligne);
   })
 
+
   //barre de recherche sur la première colonne
   $("#myInput").on("keyup", function () {
     var value = $(this).val().toLowerCase();
@@ -57,6 +69,7 @@ $(document).ready(function () {
     $("#myTable tr").filter(function () {
       var isMatch = $(this).children(':eq(0)').text().toLowerCase().indexOf(value) > -1;
       $(this).toggle(isMatch)
+      var rowCount = $('#myTable tr').length;
 
       if (isMatch) {
         nbValue++
