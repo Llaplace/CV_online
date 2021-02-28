@@ -9,3 +9,4 @@ Mettre navBar sur tout les fichiers
 Ajouter l'option copier dans info personnelles pour mail et téléphone
 index.html : link toute la div
 Revoir navbar pour accueil ou autre page
+ajouter à toutes les img alt

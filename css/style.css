@@ -70,3 +70,9 @@ a:link, a:visited {
     opacity: 0.8;
 
 }
+
+/* centre_interet.html */
+.img_ci{
+    max-width: 60%;
+    max-height: 60%;
+}
