@@ -7,3 +7,5 @@ Revoir navbar pour accueil ou autre page
 Renommer les chemins urls 
 Regarder au niveau du https
 Modifier les a link
+Modification page erreur 404, 403, 402, 401
+Ajout phrase indiquant que les scripts du site sont sur github

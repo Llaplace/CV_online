@@ -3,7 +3,6 @@ $(document).ready(function () {
 
   var competence = [
     ["langue", "anglais", "B1"],
-    ["langue", "français", "B1"],
     ["informatique", "Angular", "2"],
     ["informatique", "Bio Perl", "1"],
     ["informatique", "Bootstrap", "4"],
