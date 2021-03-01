@@ -3,61 +3,32 @@ $(document).ready(function () {
 
   var competence = [
     ["langue", "anglais", "B1"],
-    ["informatique", "Angular", "2"],
-    ["informatique", "Bio Perl", "1"],
-    ["informatique", "Bootstrap", "4"],
-    ["informatique", "C", "1"],
-    ["informatique", "Caml", "3"],
-    ["informatique", "CSS", "5"],
-    ["informatique", "Django", "3"],
-    ["informatique", "HTML", "5"],
-    ["informatique", "Java", "3"],
-    ["informatique", "Javascript", "4"],
-    ["informatique", "Node js", "3"],
-    ["informatique", "Perl", "2"],
-    ["informatique", "PHP", "2"],
-    ["informatique", "Postgres", "3"],
-    ["informatique", "Python", "3"],
-    ["informatique", "SQL", "4"],
-    ["informatique", "Unix shell", "3"]
+    ["informatique", "Angular", "base"],
+    ["informatique", "Bio Perl", "base"],
+    ["informatique", "Bootstrap", "acquis"],
+    ["informatique", "C", "base"],
+    ["informatique", "Caml", "en cours"],
+    ["informatique", "CSS", "acquis"],
+    ["informatique", "Django", "en cours"],
+    ["informatique", "HTML", "acquis"],
+    ["informatique", "Java", "en cours"],
+    ["informatique", "Javascript", "acquis"],
+    ["informatique", "Node js", "en cours"],
+    ["informatique", "Perl", "base"],
+    ["informatique", "PHP", "base"],
+    ["informatique", "Postgres", "en cours"],
+    ["informatique", "Python", "en cours"],
+    ["informatique", "SQL", "acquis"],
+    ["informatique", "Unix shell", "en cours"]
   ]
- 
-  function niveau(nb) {
-    var star = "";
-    switch (nb) {
-      case "1":
-        star = '<i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>'
-        break;
-      case "2":
-        star = '<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>'
-        break;
-      case "3":
-        star = '<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>'
-        break;
-      case "4":
-        star = '<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="far fa-star"></i>'
-        break;
-      case "5":
-        star = '<i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>'
-        break;
 
-      default:
-        star = '<i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i><i class="far fa-star"></i>'
-        break;
-    }
-    return star
-  }
 
   // remplissage tableau
   $.each(competence, function (index, elt) {
     //  console.log(elt);
-    if (elt[0] == "langue") {
-      var ligne = "<tr><td>" + elt[1] + "</td><td>" + elt[0] + "</td><td>" + elt[2] + "</td></tr>"
+    var ligne = "<tr><td>" + elt[1] + "</td><td>" + elt[0] + "</td><td>" + elt[2] + "</td></tr>"
       
-    } else {
-       ligne = "<tr><td>" + elt[1] + "</td><td>" + elt[0] + "</td><td>" + niveau(elt[2]) + "</td></tr>"
-      
-    }
+    
     $("tbody").append(ligne);
   })
 

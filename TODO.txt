@@ -1,10 +1,12 @@
-Compétences.html :  explication au niveau th
-Compétences.js : refaire fonction niveau ou mettre maîtrise experte, amateur
 Traduction
-Ajouter l'option copier dans info personnelles pour mail et téléphone
 index.html : link toute la div
-Revoir navbar pour accueil ou autre page
-Renommer les chemins urls 
 Modification page erreur 404, 403, 402, 401
-Ajout phrase indiquant que les scripts du site sont sur github
 MAJ age tout les ans dans information personnelles
+
+compétences barre de recherche mettre en francais
+compétences problème couleur type
+compétences ajout filtre pour niveau
+
+formation/expérience pro quand sélectionner mettre en gras ou agrandir 
+
+mettre crédit LIsa en footer

@@ -1,18 +1,22 @@
 /* Toutes les pages */
 
-body {
+body,html {
     background-image: url("../data/images/watercolor-5062356_1920.jpg");
 }
 
-a:link, a:visited {
+a:link,
+a:visited {
     color: #165fb3;
     text-decoration: none;
-  }
+}
 
+.footer{
+    margin-top: 0%;
+}
 
 
 /* index.html */
-.col_index{
+.col_index {
     background-color: whitesmoke;
     opacity: 0.7;
     max-width: 100%;
@@ -24,23 +28,25 @@ a:link, a:visited {
 }
 
 
-.a_index:link, .a_index:visited {
+.a_index:link,
+.a_index:visited {
     color: black;
     padding: 10px 20px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
-  }
-  
-  .col_index:hover, .col_index:active {
+}
+
+.col_index:hover,
+.col_index:active {
     background-color: #3e6da1;
     opacity: 0.9;
     color: white;
-  }
+}
 
 /* information_personnelles */
 
-.container_ip{
+.container_ip {
     background-color: whitesmoke;
     opacity: 0.9;
     max-width: 100%;
@@ -53,26 +59,29 @@ a:link, a:visited {
 }
 
 /* competences.html */
-#dropdownMenuLink, #dropdownMenuLink:active,#dropdownMenuLink:link,#dropdownMenuLink:visited{
-    background:none ;
-    border:none;
+#dropdownMenuLink,
+#dropdownMenuLink:active,
+#dropdownMenuLink:link,
+#dropdownMenuLink:visited {
+    background: none;
+    border: none;
 }
 
-#dropdownMenuLink:hover{
-    background-color: white ;
+#dropdownMenuLink:hover {
+    background-color: white;
     opacity: 0.8;
     color: black;
 }
 
 /* formations.html */
-.accordion-body{
-    background-color: white ;
+.accordion-body {
+    background-color: white;
     opacity: 0.8;
 
 }
 
 /* centre_interet.html */
-.img_ci{
+.img_ci {
     max-width: 60%;
     max-height: 60%;
 }
