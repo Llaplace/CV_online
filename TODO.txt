@@ -3,10 +3,6 @@ index.html : link toute la div
 Modification page erreur 404, 403, 402, 401
 MAJ age tout les ans dans information personnelles
 
-compétences barre de recherche mettre en francais
-compétences problème couleur type
-compétences ajout filtre pour niveau
-
 formation/expérience pro quand sélectionner mettre en gras ou agrandir 
 
-mettre crédit LIsa en footer
+mettre crédit Lisa en footer

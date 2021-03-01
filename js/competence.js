@@ -40,7 +40,6 @@ $(document).ready(function () {
     $("#myTable tr").filter(function () {
       var isMatch = $(this).children(':eq(0)').text().toLowerCase().indexOf(value) > -1;
       $(this).toggle(isMatch)
-      var rowCount = $('#myTable tr').length;
 
       if (isMatch) {
         nbValue++
@@ -64,10 +63,17 @@ $(":radio").change(function () {
     var value = this.value.toLowerCase();
     if (value == "tout") {
       $("#myTable tr").show()
-    } else {
+
+    } else if (value =="informatique" || value == "langue"){
       //filtre sur la 2eme colonne
       $("#myTable tr").filter(function () {
         $(this).toggle($(this).children(':eq(1)').text().toLowerCase().indexOf(value) > -1)
+      });
+
+    }else{      
+      //filtre sur la 3eme colonne
+      $("#myTable tr").filter(function () {
+        $(this).toggle($(this).children(':eq(2)').text().toLowerCase().indexOf(value) > -1)
       });
     }
 
