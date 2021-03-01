@@ -7,4 +7,4 @@ Revoir navbar pour accueil ou autre page
 Renommer les chemins urls 
 Modification page erreur 404, 403, 402, 401
 Ajout phrase indiquant que les scripts du site sont sur github
-Erreur navbar sous format mobile
+MAJ age tout les ans dans information personnelles
