@@ -24,17 +24,26 @@
 
 <body>
   <!-- Navbar -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-light" style="background-color: #9eb9cf;">
+  <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #9eb9cf;">
     <div class="container-fluid">
       <span class="navbar-brand mb-0 h1">
         Lisa Laplace
       </span>
-      <span class="navbar-text">
-        Téléphone : <strong>+33 6 17 76 31 06</strong> | Email : <strong>lisa.laplace12@gmail.com </strong>
-      </span>
-      <form method="get" action="../data/CV_Lisa_Laplace.pdf">
-        <button class="btn" style="background-color: #81accf;" type="submit">CV PDF à télécharger</button>
-     </form>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <div class="navbar-nav me-auto mb-2 mb-lg-0">
+          <span class="navbar-text">
+            Téléphone : <strong>+33 6 17 76 31 06</strong> | Email : <strong>lisa.laplace12@gmail.com </strong>
+          </span>
+        </div>
+        <form method="get" action="../data/CV_Lisa_Laplace.pdf">
+          <button class="btn" style="background-color: #81accf;" type="submit">CV PDF à télécharger</button>
+        </form>
+      </div>
+
     </div>
   </nav>
 
