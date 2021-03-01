@@ -6,9 +6,10 @@ body {
 }
 
 a:link, a:visited {
-    color: black;
+    color: #165fb3;
     text-decoration: none;
   }
+
 
 
 /* index.html */

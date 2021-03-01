@@ -4,4 +4,6 @@ Traduction
 Ajouter l'option copier dans info personnelles pour mail et téléphone
 index.html : link toute la div
 Revoir navbar pour accueil ou autre page
-ajouter à toutes les img alt
+Renommer les chemins urls 
+Regarder au niveau du https
+Modifier les a link
